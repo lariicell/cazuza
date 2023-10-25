@@ -1,0 +1,89 @@
+@media (max-width: 900px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Estilo padrão (desktop-first) */
+h1 {
+    font-size: 36px;
+}
+
+/* Adaptação para dispositivos com
+    tela menor que 768px (por exemplo,
+    tablets) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+        background-color: blue;
+    }
+}
+
+/* Adaptação para dispositivos com
+tela menor que 480px (por exemplo,
+smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        background-color: brown;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+        background-color: brown;
+    }
+}
+
+/* Estilo padrão (desktop-first)
+*/
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Adaptação para dispositivos
+    móveis */
+@media (max-width: 768px) {
+    .column {
+        float: none;
+        width: 100%;
+    }
+}
+
+.container {
+    background-color: lightblue;
+}
+
+/* Cor de fundo diferente para
+        orientação paisagem */
+@media (orientation: landscape) {
+    .container {
+        background-color:
+            lightcoral;
+    }
+}
+
+/* Estilo padrão (desktop-first)
+*/
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Carregando uma imagem menor
+    para dispositivos com tela menor
+    que 768px */
+@media (max-width: 508px) {
+    .responsive-image {
+        content: url('smallimage.jpg');
+    }
+}
